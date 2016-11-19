@@ -8,7 +8,7 @@ audio_location = '~/EmergencyBroadcast/' + audio_name
 
 
 def broadcast(what):
-    call('pico2wave -w ' + audio_location + ' "' + what + '"')
+    call('pico2wave -w ' + audio_location + ' "' + what + '"', shell=True)
 
     with contextlib.closing(wave.open(audio_location, 'r')) as audio:
         frames = audio.getnframes()
