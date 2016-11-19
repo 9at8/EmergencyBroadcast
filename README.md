@@ -1,7 +1,7 @@
 # EmergencyBroadcast
 Uses a Raspberry Pi 2 to broadcast FM signals from user input text over a specific range of frequencies in case of an emergency.
 This project is built on top of [PiFmRds](https://github.com/ChristopheJacquet/PiFmRds).
-Thanks a lot to @ChristopheJacquet for building [PiFmRds](https://github.com/ChristopheJacquet/PiFmRds).
+Thanks a lot to [@ChristopheJacquet](https://github.com/ChristopheJacquet) for building [PiFmRds](https://github.com/ChristopheJacquet/PiFmRds).
 
 ## Hardware Requirements
 - Raspberry Pi
