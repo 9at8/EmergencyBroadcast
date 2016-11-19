@@ -30,7 +30,7 @@ def broadcast(what, multiplier, start, end):
               ' -audio ' + audio_location + ' -freq '
 
     # Broadcasts one frequency at a time
-    for freq in range(floor(start * 10), floor((end + 1) * 10)):
+    for freq in range(floor(start * 10), floor(end * 10) + 1):
         call(command + str(freq / 10), shell=True)
 
     # Clean-up of Audio file after broadcast is over
