@@ -41,8 +41,8 @@ while True:
     text = input('\nEnter text to broadcast: ')
 
     try:
-        start, end = map(float, input('Start and end frequency of the broadcast\
-        (Press enter for default values): ').split())
+        start, end = map(float,
+                         input('Start and end frequency of the broadcast (Press enter for default values): ').split())
     except ValueError:
         start = 88
         end = 107
@@ -70,11 +70,12 @@ while True:
     broadcast(text, multiplier, start, end)
 
     # Choice of broadcasting again
-    again = input('Do you want to broadcast again? (y/n): ')
+    again = input('\nDo you want to broadcast again? (y/n): ')
     if 'y' == again.lower():
+        print('\n')
         pass
     elif 'n' == again.lower():
-        print('No more broadcasts scheduled, exiting.')
+        print('\nNo more broadcasts scheduled, exiting.\n')
         break
     else:
-        print('Incorrect option, exiting.')
+        print('\nIncorrect option, exiting.\n')
