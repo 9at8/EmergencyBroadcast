@@ -22,4 +22,4 @@ def broadcast(what, multiplier):
         call(command + str(freq / 10), shell=True)
 
 
-broadcast('Hello World! This is a great thing, let us see if this works lol.')
+broadcast('Hello World! This is a great thing, let us see if this works lol.', 2)
