@@ -4,7 +4,7 @@ from subprocess import call
 
 player_location = '~/PiFmRds/src/./pi_fm_rds'
 audio_name = 'audio.wav'
-audio_location = '~/EmergencyBroadcast/' + audio_name
+audio_location = '/home/aditya/EmergencyBroadcast/' + audio_name
 
 
 def broadcast(what):
