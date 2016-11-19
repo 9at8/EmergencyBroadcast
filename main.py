@@ -13,7 +13,7 @@ def broadcast(what, multiplier):
     with contextlib.closing(wave.open(audio_location, 'r')) as audio:
         frames = audio.getnframes()
         rate = audio.getframerate()
-        duration = 0.2 + multiplier * frames / rate
+        duration = 0.5 + multiplier * frames / rate
 
     command = 'sudo timeout ' + str(duration) + ' ' + player_location + \
               ' -audio ' + audio_location + ' -freq '
