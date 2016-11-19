@@ -41,8 +41,8 @@ while True:
     text = input('\nEnter text to broadcast: ')
 
     try:
-        start, end = map(int, input('Start and end frequency of the broadcast\
-                                    (Press enter for default values): ').split())
+        start, end = map(float, input('Start and end frequency of the broadcast\
+        (Press enter for default values): ').split())
     except ValueError:
         start = 88
         end = 107
