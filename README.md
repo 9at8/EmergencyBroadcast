@@ -18,7 +18,7 @@ Thanks a lot to @ChristopheJacquet for building [PiFmRds](https://github.com/Chr
 - Install Pico Text to Speech
   `sudo apt-get install libttspico-utils`
 - Edit `main.py` to:
-- 1. Set `player_location` as the location of the [PiFmRds](https://github.com/ChristopheJacquet/PiFmRds) executable
-  2. Set `audio_name` as the temporary name for TTS audio
-  3. Set `audio_location` as the temporary location for the TTS audio file
+- - Set `player_location` as the location of the [PiFmRds](https://github.com/ChristopheJacquet/PiFmRds) executable
+- - Set `audio_name` as the temporary name for TTS audio
+- - Set `audio_location` as the temporary location for the TTS audio file
 - Run! `./main.py`
