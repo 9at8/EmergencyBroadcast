@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import contextlib
 import wave
 from math import floor
