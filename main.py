@@ -1,5 +1,25 @@
+import wave
+import contextlib
 from subprocess import call
 
-for freq in range(880, 1070):
-    call('sudo timeout 10 ~/PiFmRds/src/./pi_fm_rds -audio ~/EmergencyBroadcast/lookdave.wav -freq ' + str(freq / 10),
-         shell=True)
+player_location = '~/PiFmRds/src/./pi_fm_rds'
+audio_name = 'audio.wav'
+audio_location = '~/EmergencyBroadcast/' + audio_name
+
+
+def broadcast(what):
+    call('pico2wave -w ' + audio_location + ' "' + text + '"')
+
+    with contextlib.closing(wave.open(audio_location, 'r')) as audio:
+        frames = audio.getnframes()
+        rate = audio.getframerate()
+        duration = frames / rate
+
+    command = 'sudo timeout ' + str(duration) + ' ' + player_location + \
+              ' -audio ' + audio_location + ' -freq '
+
+    for freq in range(880, 1070):
+        call(command + str(freq / 10), shell=True)
+
+
+broadcast('Hello World! This is a great thing, let us see if this works lol.')
