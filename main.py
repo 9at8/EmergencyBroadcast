@@ -79,3 +79,4 @@ while True:
         break
     else:
         print('\nIncorrect option, exiting.\n')
+        break
